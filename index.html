@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+<div id="header" style="background-image: url(images/background.png);">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Manisha</span><br>Dhankhar</h1>
+        </div>
+    </div>
+</div>
+<!-------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br><br>
+                <p>Hi, I'm Manisha a <b style="color: white;">full-stack developer</b> who loves turning complex problems into clean, working products.<br>
+
+<br><i style="color: white;" >What I've built</i>: I've worked on modern web development projects: a system that uses satellite images to help cities plan better rainwater harvesting (Jal Drishti), a secure rental marketplace where students can list and rent items safely (UnityRent), and a smart property platform that uses AI to give accurate, trustworthy recommendations (The Roaming Hub).<br>
+
+<br><i style="color: white;" >What I'm doing now</i>: I'm currently deepening my expertise in scalable system design and AI-integrated applications, while leading the tech team at my college's CSE club where I manage the infrastructure behind hackathons and workshops, from automated judging systems to sponsor coordination and event execution.<br>
+
+<br><i style="color: white;" >What drives me</i>: I'm genuinely passionate about the intersection of clean engineering and real-world impact I don't just want code that works, I want systems that are secure, scalable, and actually solve problems people face. That same drive pushes me to compete: I've placed 2nd Runner-Up at TechJam 2.0 (1,600+ teams) and Top 10 at HackGround India 2K25 (3,000+ teams) proof that I can design, build, and ship under real pressure.<br>
+
+<br>Currently a <i style="color: white;">final year B.Tech student at UIET Kurukshetra (CGPA 8.26/10)</i>, I'm always building, always learning, and always chasing the next hard problem worth solving.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full-Stack Development</span><br>Building scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js)</li>
+                        <li><span>UI/UX & Frontend Design</span><br>Designing clean, responsive web interfaces using React.js, Next.js, Tailwind CSS, and Material UI</li>
+                        <li><span>Backend & API Development</span><br>Designing secure RESTful APIs, authentication (JWT), and database architecture,CI-CD piplines,Docker</li>
+                         <li><span>AI & Automation</span><br>Integrating AI features like RAG pipelines, semantic search, and computer vision into real applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Tech Team Lead — Hail Jarvis CSE Club<br>
+                        Aug 2025 – Present</span><br>Leading technical infrastructure for campus-wide hackathons and workshops managing automated judging systems, mentorship pipelines, sponsorships, and digital platforms. Helped drive a 40% increase in student engagement through better coordination and execution.</li>
+                        <li><span>Freelance Web Developer</span><br>Built a complete WordPress website for a yoga instructor, showcasing classes, retreats, and services with a clean, user-friendly design.<br><a style="text-decoration: none; color: red;" href="https://yogarubika.com/" target="_blank">View Live Site</a></li>
+                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech in Electrical and Computer Engineering</span><br>University Institute of Engineering and Technology, Kurukshetra
+                       <br> Aug 2023 – May 2027 | CGPA: 8.26/10</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------Achivements---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Achivements</h1>
+        <div class="services-list">
+            <div class="mani">
+                <i class="fas fa-code"></i>
+                <img src="images/design-1.png" class="fad" >
+               
+                <h2>TechJam 2.0 (2nd Runner-Up)</h2>
+                <p>Secured 3rd position among 1,600+ teams at Microsoft Sovereign Office, Noida (Organized by Code Rangers).</p>
+                <a href="#">See more</a>
+            </div>
+            <div class="mani">
+                <i class="fas fa-crop-alt"></i>
+                <img src="images/image1.png" class="fad" >
+                <h2>HackGround India 2K25 (Top 10 Finalist)</h2>
+                <p>Ranked in the top 10 out of 3,000+ teams at ThoughtWorks Office, Gurugram (Coordinated by TechVerse Nexus and Unstop).</p>
+                <a href="#">See more</a>
+            </div>
+            <div class="mani">
+                <i class="fab fa-app-store"></i>
+                <img src="images/image.png" class="fad" >
+                <h2>Hackamania (Top 15 Finalist)</h2>
+                <p>Achieved Top 15 rank out of 2,000+ teams at Microsoft Office, Gurugram (Organized by The Elites and Reskill).</p>
+                <a href="#">See more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <div class="slider">
+            <img src="images/work-1.png" class="slide">
+            <img src="images/work-2.png" class="slide">
+            <img src="images/work-3.png" class="slide">
+           
+                 </div>
+                <div class="layer">
+                    <h3>UnityRent(Website)</h3>
+                    <p>A peer-to-peer rental marketplace that lets students safely share and rent academic resources. Built with the MERN stack, AWS S3, JWT authentication, and Material-UI — featuring payment gateway integration with custom escrow logic, role-based access control (RBAC), and Student ID validation for secure, trusted transactions.</p>
+                    <a href="https://github.com/ManishaDhankhar/UnityRent"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <div class="slider">
+            <img src="images/work-4.png" class="slide">
+            <img src="images/work-5.png" class="slide">
+            <img src="images/work-6.png" class="slide">
+                 </div>
+                <div class="layer">
+                    <h3>Jal Drishti(Web and App)</h3>
+                    <p>A geospatial decision support system that automates the evaluation of Rooftop Rainwater Harvesting (RTRWH) and hydrological recharge potential. Built using Sentinel-2 multi-spectral imagery, QGIS, and Python — featuring a U-Net and Mask R-CNN pipeline for high-precision rooftop segmentation (90%+ accuracy), with VR visualization to simulate runoff patterns for urban sustainability planning.</p>
+                    <a href="https://github.com/ManishaDhankhar/Jal-Drishti-2.0"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <div class="slider">
+            <img src="images/work-7.png" class="slide">
+            <img src="images/work-8.png" class="slide">
+            <img src="images/work-9.png" class="slide">
+                 </div>
+                <div class="layer">
+                    <h3>The Roaming Hub (Website)</h3>
+                    <p>A distributed property platform combining a Node.js engine with a Python AI microservice, using Mapbox GL JS for interactive geospatial visualization. Features a RAG (Retrieval-Augmented Generation) pipeline with ChromaDB and Gemini 1.5 Flash for hallucination-free AI recommendations, with automated CI/CD deployment via GitHub Actions and Docker for high-availability.</p>
+                    <a href="https://github.com/ManishaDhankhar/The-Roaming-Hub"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/ManishaDhankhar" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> manisharajeshdhankhar@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 9992288152</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/manisha25122005" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://github.com/ManishaDhankhar" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/manisha-dhankhar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" target="_blank" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Manisha. Made with <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Manisha Dhankhar</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
