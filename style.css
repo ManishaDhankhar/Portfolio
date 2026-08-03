@@ -393,8 +393,10 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/phone-background.png);
-    }
+    background-image: url(images/phone-background.png);
+    background-position: top center;
+    background-attachment: scroll;
+}
     .header-text{
         margin-top: 100%;
         font-size: 16px;
