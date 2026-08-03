@@ -436,6 +436,11 @@ nav .fas{
     .about-col-1{
         margin-bottom: 30px;
     }
+    .about-col-1 img{
+    height: 350px;
+    object-fit: cover;
+    object-position: top center;
+}
     .about-col-2{
         font-size: 14px;
     }
