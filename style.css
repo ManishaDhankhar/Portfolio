@@ -27,6 +27,7 @@ body{
 
 nav{
     display: flex;
+    position:fix;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
